@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/monticello_ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Monticello</title>
+</head>
+<body>
+    <header class="header" id="about_us">
+        <div class="header__top">
+            <span><img src="./img/monticello_logo.svg" alt="monticello_logo"></span>
+            <nav class="nav">
+                <input type="checkbox" id="burger" class="nav__burger">
+                <label for="burger" class="nav__burger-img"></label>
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="#about_us" class="nav__link nav__link_active" onclick="slowScroll('#about_us')">About US</a> </li>
+                    <li class="nav__item"> <a href="#project" class="nav__link" onclick="slowScroll('#project')">Projects</a> </li>
+                    <li class="nav__item"> <a href="#news" class="nav__link" onclick="slowScroll('#news')">News</a> </li>
+                    <li class="nav__item"> <a href="#form" class="nav__link" onclick="slowScroll('#form')">Contact</a> </li>
+                </ul>
+            </nav>
+            <span class="social_icon">
+               <a href=""> <img src="./img/facebook_logo.svg" alt="facebook_logo" ></a> 
+               <a href=""><img src="./img/twiter_logo.svg" alt="twiter_logo"></a> 
+               <a href=""><img src="./img/insta_logo.svg" alt="insta_logo"></a> 
+            </span>
+        </div>
+        <div class="container header__info">
+            <div class="header__slider">
+                <div class="slider__item">
+                    <h1 class="header__title title">SIMPLE & MODERN </h1>
+                    <p class="header__text text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+                <div class="slider__item">
+                    <h1 class="header__title title">SIMPLE & MODERN 2</h1>
+                    <p class="header__text text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+                <div class="slider__item">
+                    <h1 class="header__title title">SIMPLE & MODERN 3</h1>
+                    <p class="header__text text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+                <div class="slider__item">
+                    <h1 class="header__title title">SIMPLE & MODERN 4</h1>
+                    <p class="header__text text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+                <div class="slider__item">
+                    <h1 class="header__title title">SIMPLE & MODERN 5</h1>
+                    <p class="header__text text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="scroll__top">
+        <a href="#about_us"  onclick="slowScroll('#about_us')"> <img src="./img/arrow.svg" alt="arrow"></a>
+    </div>
+
+    <main class="main">
+        <section class="section projects__section" id="project">
+            <h2 class="title section__title">WHAT WE DO </h2>
+            <div class="project project__trade">
+                <div class="project__img">
+                <div class="project__background"></div>
+                <div class="project__img_trade"></div>  
+                </div>
+                <div class="project__info">
+                    <h3 class="title project__title text_left">ONE WORLD</h3>
+                    <h2 class="title text_left">TRADE CENTER</h2>
+                    <p class="text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+                    <p class="text tradeMore">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+                    <button type="submit" class="button" onclick="showMore('.tradeMore')">MORE DETAILS</button>
+                    <p class="text adress"> New York City, United States - 1776 feet </p>
+                </div>
+            </div>
+            <div class="project project__commerc">
+                <div class="commerc__info">
+                    <h3 class="title project__title text_left">INTERNATIONAL</h3>
+                    <h2 class="title text_left">COMMERCE CENTRE</h2>
+                    <p class="text">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+                    <p class="text commercMore">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+                    <button type="submit" class="button" onclick="showMore('.commercMore')">MORE DETAILS</button>
+                    <p class="text adress"> Hong Kong - 1588 feet </p>
+                </div>
+                <div class="project__img">
+                <div class="project__background commerc__background"></div>
+                <div class="project__img_commerc"></div>    
+                </div>
+            </div>
+        </section>
+
+        <section class="section news__section" id="news">
+            <h2 class="title news__title">LATEST NEWS</h2>
+            <div class="news__slider">
+                <div class="slider__item">
+                    <div class="news__item_img"><img src="./img/news_see.png" alt="news_see"></div>
+                    <h3 class="item__title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                    <p class="text nesw__text">Free directories: directories are perfect for customers that are searching for...</p>
+                    <div class="autor">
+                        <div class="autor__img1"></div>
+                        <div class="autor__info">
+                            <p class="autor__name">ALJA BRUN</p>
+                            <p class="autor__date">20 Jan 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="news__item_img"><img src="./img/news_effective.png" alt="news_effective"> </div>
+                    <h3  class="item__title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                    <p class="text  nesw__text">Free directories: directories are perfect for customers that are searching for...</p>
+                    <div class="autor">
+                        <div class="autor__img2"></div>
+                        <div class="autor__info">
+                            <p class="autor__name">DOMINIC FREEMAN</p>
+                            <p class="autor__date">13 Dec 2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="news__item_img"><img src="./img/news_hypnotize.png" alt="news_hypnotize"></div>
+                    <h3  class="item__title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                    <p class="text  nesw__text">Free directories: directories are perfect for customers that are searching for...</p>
+                    <div class="autor">
+                        <div class="autor__img3"></div>
+                        <div class="autor__info">
+                            <p class="autor__name">ALICE WARD</p>
+                            <p class="autor__date">30 Nov 2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="news__item_img"><img src="./img/news_hypnotize2.png" alt="news_hypnotize"></div>
+                    <h3 class="item__title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                    <p class="text  nesw__text">Free directories: directories are perfect for customers that are searching for...</p>
+                    <div class="autor">
+                        <div class="autor__img4"></div>
+                        <div class="autor__info">
+                            <p class="autor__name">ALICE WARD</p>
+                            <p class="autor__date">30 Nov 2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="news__item_img"><img src="./img/news_hypnotize3.png" alt="news_hypnotize"></div>
+                    <h3 class="item__title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                    <p class="text  nesw__text">Free directories: directories are perfect for customers that are searching for...</p>
+                    <div class="autor">
+                        <div class="autor__img5"></div>
+                        <div class="autor__info">
+                            <p class="autor__name">ALICE WARD</p>
+                            <p class="autor__date">30 Nov 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section gallery">
+            <h2 class="title section__title">GALLERY </h2>
+                <div class="gallery__img">
+                    <div class="gallery__360">
+                        <img src="./img/gallery_1.png" alt="gallery_baner">
+                        <a href="https://goo.gl/maps/Lrb3JZ3EnoHLuTa78" class="gallery__360_svg"> <img src="./img/360.svg" alt="360"></a>
+                    </div>
+                    <div class="gallery_4">
+                        <img src="./img/gallery_2.png" alt="gallery_img">
+                        <img src="./img/gallery_3.png" alt="gallery_img">
+                        <img src="./img/gallery_4.png" alt="gallery_img">
+                        <img src="./img/gallery_5.png" alt="gallery_img">
+                    </div>
+                </div>
+                <div class="galleryMore" >
+                    <img src="./img/gallery_2.png" alt="gallery_img">
+                    <img src="./img/gallery_3.png" alt="gallery_img">
+                    <img src="./img/gallery_4.png" alt="gallery_img">
+                    <img src="./img/gallery_5.png" alt="gallery_img">
+                </div>
+                <div class="gallery__button">
+                    <button type="submit" class="button" onclick="showMore('.galleryMore')">SEE MORE</button>
+                </div>
+                
+        </section>
+
+        <div class="map"> 
+            <div id="map"></div>
+        </div>
+
+    </main>
+    <footer class="footer" >
+        <form class="form" method="get" id="form">
+            <h2 class="title section__title form__title">GET IN TOUCH </h2>
+            <div class="form__info">
+            <div class="form__contact">
+            <p class="text"><span class="fa-solid fa-location-dot"></span><a href="https://www.facebook.com/profile.php?id=100002313205619"> 91 Nolan Extensions Suite 670</a></p>
+            <p class="text"><span class="fa-solid fa-phone"></span> <a href="tel:+0013568682454"> +001 356-868-2454</a></p>
+            <p class="text"><span class="fa-solid fa-inbox"></span><a  href="mailto:montichello@service.com"> montichello@service.com</a></p>
+            <p class="text"><span class="fa-solid fa-clock-rotate-left"></span><a href="https://www.facebook.com/profile.php?id=100002313205619"> From 07:05AM to 19:30PM</a></p>
+            </div>
+            
+            <div class="form__submit">
+                <input type="text" id="name" class="form__input _req" placeholder="Mollie Medina">  
+                <input type="email" id="emeil" class="form__input _req _email" placeholder="Email">
+                <button type="submit" class="button">SUBMIT</button>
+            </div>
+
+            </div>
+            
+        </form>
+        <div class="footer__info">
+            <div><img src="./img/monticello_logo.svg" alt="monticello_logo"></div>
+            <p class="text footer__text">Copyrights © 2020 Montichello</p>
+        </div>
+        <div class="footer__social">
+                <a href=""> <img src="./img/facebook_logo.svg" alt="facebook_logo" ></a> 
+                <a href=""><img src="./img/twiter_logo.svg" alt="twiter_logo"></a> 
+                <a href=""><img src="./img/insta_logo.svg" alt="insta_logo"></a> 
+        </div>
+    </footer>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5pVkHKYDxJWxHYxHMYcv-avll0Y6EcSc&callback=initMap&v=weekly"
+      async
+    ></script>
+</body>
+</html>
